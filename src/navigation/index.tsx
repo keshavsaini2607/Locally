@@ -1,13 +1,13 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import AuthStack from './stacks/AuthStack';
+import HomeTabs from './stacks/HomeTabs';
 
 const Stack = createStackNavigator();
 
 export default function MainStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Auth" component={AuthStack} />
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Home" component={HomeTabs} />
     </Stack.Navigator>
   );
 }

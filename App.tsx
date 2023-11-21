@@ -1,16 +1,16 @@
 import 'react-native-gesture-handler';
-import {SafeAreaView} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import MainStack from './src/navigation';
+import {NativeBaseProvider} from 'native-base';
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <NativeBaseProvider>
       <NavigationContainer>
         <MainStack />
       </NavigationContainer>
-    </SafeAreaView>
+    </NativeBaseProvider>
   );
 };
 
