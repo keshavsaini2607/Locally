@@ -20,8 +20,7 @@
         "signupAttributes": [
           "EMAIL",
           "NAME",
-          "PHONE_NUMBER",
-          "GENDER"
+          "PHONE_NUMBER"
         ],
         "socialProviders": [],
         "usernameAttributes": [
